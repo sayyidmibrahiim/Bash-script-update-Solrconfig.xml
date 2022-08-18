@@ -33,7 +33,6 @@ declare -a arr=(
 )
 
 if [[ "$action" == "update" ]]; then
-        echo "================================================================="
         echo "----------------Updateing new solrconfig.xml---------------------"
         echo "================================================================="
         for collections in "${arr[@]}"
@@ -44,7 +43,6 @@ if [[ "$action" == "update" ]]; then
                 curl --user {username}:{password} "http://$ip:$solr_port/solr/admin/collections?action=RELOAD&name=$collections" > /dev/null 2>&1
         done
 elif [[ "$action" == "rollback" ]]; then
-        echo "================================================================="
         echo "-------------------Rollback old solrconfig.xml-------------------"
         echo "================================================================="
         for collections in "${arr[@]}"
