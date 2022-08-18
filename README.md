@@ -4,6 +4,7 @@ This bash script is used to automatically update (remove!-- suggestion request h
 --> The following configuration will be deleted on solrconfig.xml:
 
 <!-- suggestion request handler -->
+
 	<searchComponent class="solr.SpellCheckComponent" name="suggest">
 		<lst name="spellchecker">
 			<str name="name">suggest</str>
@@ -28,3 +29,8 @@ This bash script is used to automatically update (remove!-- suggestion request h
 			<str>suggest</str>
 		</arr>
 	</requestHandler>
+
+HOW TO USE THIS SCRIPT:
+1. run the first script scriptRemoveSomeSolrConfig.sh
+2. if you want to manually check the output of the first script
+3. run the second script for update solrconfig.xml or rollback solrconfig.xml
