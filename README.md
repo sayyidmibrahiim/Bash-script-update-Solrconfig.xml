@@ -1,4 +1,16 @@
+<div align="center">
+
 # SolrConfig Bulk Update Automation
+
+**A case study in repeatable SolrCloud configuration changes and manual rollback.**
+
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square) ![SolrCloud](https://img.shields.io/badge/SolrCloud-2563eb?style=flat-square) ![Status-Learning Archive](https://img.shields.io/badge/Status-Learning_Archive-e18536?style=flat-square)
+
+[Workflow](#what-the-scripts-do) · [Assumptions](#environment-assumptions) · [Risks](#important-limitations) · [Files](#repository-files)
+
+</div>
+
+---
 
 A Bash automation experiment for modifying the same `solrconfig.xml` block across multiple Apache Solr Cloud configsets, while keeping a local backup that can be used for rollback.
 
